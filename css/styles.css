@@ -548,8 +548,10 @@ a {
 .icon-exit{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-exit:hover,
-.icon-exit:focus{
+.modal_exit:hover svg{
+  fill: #ffffff;
+}
+.modal_exit:focus svg{
   fill: #ffffff;
 }
 .modal_p{
@@ -595,7 +597,7 @@ a {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal_name:focus + .icon-person{
+.modal_name:focus + svg {
   fill: #4D5AE5;
 }
 .modal_area{
@@ -633,7 +635,7 @@ position: absolute;
     overflow: hidden;
     white-space: nowrap;
   }
-.modal_cheklabel{
+.modal_checklabel{
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -650,7 +652,8 @@ position: absolute;
   justify-content: center;
   fill: transparent;
 }
- .visually-hidden:checked + .label_dogrulama{
+ .visually-hidden:checked + span{
+  background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
 }
@@ -672,4 +675,7 @@ position: absolute;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 100px;
+}
+.area{
+  margin-bottom: 16px;
 }
